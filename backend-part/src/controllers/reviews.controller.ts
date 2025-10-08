@@ -32,7 +32,7 @@ export class ReviewsController {
     const { message } = req.body;
 
     const review = new Review({ bookId, userId: req.user?.id, message });
-    console.log(review, bookId, req.params);
+    
     try {
         await review.save();
         return customResponses.ok(res, null, 'Review added successfully')
