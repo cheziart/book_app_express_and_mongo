@@ -35,7 +35,7 @@ export class App {
     await connectDB();
 
     this.app.listen(this.PORT, () => {
-      console.log(`🚀 Server running on http://localhost:${this.PORT}`);
+      console.log(`Server running on http://localhost:${this.PORT}`);
     });
   }
 }
